@@ -86,4 +86,11 @@ def leaderboard(state: State):
         Button("Game Tracker", game_tracker)
     ])
 
-start_server(State())
+start_server(State(
+    players=[]
+    home_team="Home",
+    away_team="Away",
+    home_score= 0,
+    away_score=0
+    message="Welcome to Hockey Tracker!"
+))
